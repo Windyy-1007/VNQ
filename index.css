@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    list-style-type: none; /* Remove bullet points */
+    background-color: #3D0000; /* Set background color to #3D0000 */
+}
+header li {
+    display: inline;
+}
+
+header a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color to white */
+    padding: 10px; /* Add some padding to the links */
+}
+
+header a:hover{
+    background-color: #950101; /* Change background color on hover */
+}
+
+.site_title {
+    padding: 20px; /* Add some padding to the content */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Set font size to 2em */
+    color: orange; /* Set text color to orange */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.banner{
+    position: relative;
+    text-align: center;
+}
+
+.heading-home-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #3D0000;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2em; /* Set font size to 2em */
+    padding: 20px;
+}
+
