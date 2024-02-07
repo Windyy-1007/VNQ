@@ -1,10 +1,9 @@
 header {
     display: flex;
     list-style-type: none; /* Remove bullet points */
-    background-color: orange; /* Set background color to orange */
+    background-color: #3D0000; /* Set background color to #3D0000 */
 }
 header li {
-    margin-right: 10px; /* Add some spacing between navigation items */
     display: inline;
 }
 
@@ -15,6 +14,21 @@ header a {
 }
 
 header a:hover{
-    background-color: white; /* Change background color on hover */
-    color: orange; /* Change text color on hover */
+    background-color: #950101; /* Change background color on hover */
+}
+
+.site_title {
+    padding: 20px; /* Add some padding to the content */
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Set font size to 2em */
+    color: orange; /* Set text color to orange */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+.heading-home-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 20px;
 }
