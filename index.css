@@ -1,7 +1,9 @@
 header {
     display: flex;
     list-style-type: none; /* Remove bullet points */
-    background-color: #3D0000; /* Set background color to #3D0000 */
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-family:'Courier New', Courier, monospace;
 }
 header li {
     display: inline;
@@ -14,16 +16,17 @@ header a {
 }
 
 header a:hover{
-    background-color: #950101; /* Change background color on hover */
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
 }
 
 .site_title {
     padding: 20px; /* Add some padding to the content */
     text-align: center; /* Center the text */
     font-size: 2em; /* Set font size to 2em */
-    color: orange; /* Set text color to orange */
+    color: white; /* Set text color to white */
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
+    background-color: black;
 }
 
 .banner{
@@ -44,9 +47,34 @@ header a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: #3D0000;
+    background-color: black;
     font-family:'Courier New', Courier, monospace;
     font-size: 2em; /* Set font size to 2em */
     padding: 20px;
+}
+
+.lobby-button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    margin: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.lobby-button:hover{
+    background-color: #950101;
+    color: white;
+}
+
+.lobby-button:active{
+    background-color: white;
+    color: black;
 }
 
