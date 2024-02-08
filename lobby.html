@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lobby.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,11 +27,36 @@
     </header>
 
     <main>
-
+        <div class="joining-code">
+        <p class="middle-label"><b>Tham gia trận đấu kín</b></p>
+            <form id="joining-private-code">
+                <label class="label" for="code">Nhập mã trận:</label>
+                <input type="text" id="jpc-code" name="code">
+                <input id="jpc-button" type="submit" value="Vào trận">
+            </form>
+        </div>
+        <p class="middle-label"><b>Tham gia trận đấu công khai</b></p>
+        <div class="public-matches">
+            <div class="public-match">
+                <p class="middle-label">Trận 1</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 2</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 3</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 4</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 5</p>
+                <button class="join-button">Vào trận</button>
+            </div>
     </main>
-
-    <footer>
-        <p>&copy; 2022 My Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>

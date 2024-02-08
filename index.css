@@ -51,6 +51,12 @@ header a:hover{
     font-family:'Courier New', Courier, monospace;
     font-size: 2em; /* Set font size to 2em */
     padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.banner-text:hover{
+    background-color: darkblue;
+    cursor: context-menu;
 }
 
 .lobby-button{
@@ -69,7 +75,7 @@ header a:hover{
 }
 
 .lobby-button:hover{
-    background-color: #950101;
+    background-color: blue;
     color: white;
 }
 
@@ -78,3 +84,12 @@ header a:hover{
     color: black;
 }
 
+.middle-label{
+    text-align: center;
+    padding-top:30px;
+    color: white;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    margin: 20px;
+}
