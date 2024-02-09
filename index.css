@@ -13,11 +13,12 @@ header a {
     text-decoration: none; /* Remove underline from links */
     color: white; /* Set text color to white */
     padding: 10px; /* Add some padding to the links */
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 header a:hover{
-    background-color: white; /* Change background color on hover */
-    color: black; /* Change text color on hover */
+    background-color: blue; /* Change background color on hover */
+    color: white; /* Change text color on hover */
 }
 
 .site_title {
@@ -32,6 +33,7 @@ header a:hover{
 .banner{
     position: relative;
     text-align: center;
+    padding-top: 10px;
 }
 
 .heading-home-image{
@@ -92,4 +94,9 @@ header a:hover{
     font-family:'Courier New', Courier, monospace;
     font-size: 1.5em; /* Set font size to 1.5em */
     margin: 20px;
+}
+
+.current-site{
+    background-color: white;
+    color:black;
 }
