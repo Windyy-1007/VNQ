@@ -29,11 +29,24 @@
     <main>
         <div class="joining-code">
         <p class="middle-label"><b>Tham gia trận đấu kín</b></p>
-            <form id="joining-private-code">
+            <form id="joining-private-code" action="" onsubmit="event.preventDefault(); goToPrivateGame()">
                 <label class="label" for="code">Nhập mã trận:</label>
                 <input type="text" id="jpc-code" name="code">
                 <input id="jpc-button" type="submit" value="Vào trận">
             </form>
+
+            <script>
+                function goToPrivateGame() {
+                    var input = document.getElementById("jpc-code").value;
+                    var action = "private-" + input + "/game-lobby.html";
+                    document.getElementById("joining-private-code").action = action;
+                    if (input !== "1007") {
+                        alert("No such room exists!");
+                    } else {
+                    document.getElementById("joining-private-code").submit();
+                    } 
+                }
+            </script>
         </div>
         <p class="middle-label"><b>Tham gia trận đấu công khai</b></p>
         <div class="public-matches">
