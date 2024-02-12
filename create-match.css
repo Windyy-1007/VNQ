@@ -1,0 +1,15 @@
+#cm-code{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.5em; /* Set font size to 1.5em */
+    transition: background-color 0.5s ease, color 0.5s ease;
+    
+}
+
+#cm-code:hover{
+    background-color: blue;
+    color: white;
+}

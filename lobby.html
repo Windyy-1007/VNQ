@@ -40,7 +40,9 @@
                     var input = document.getElementById("jpc-code").value;
                     var action = "private-" + input + "/game-lobby.html";
                     document.getElementById("joining-private-code").action = action;
-                    if (input !== "1007") {
+                    if (input == "0") {
+                        alert("This room is not available at the moment. Please try again later.");
+                    } else if (input !== "1007") {
                         alert("No such room exists!");
                     } else {
                     document.getElementById("joining-private-code").submit();
