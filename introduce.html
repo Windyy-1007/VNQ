@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="introduce.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header style="margin-bottom: 50px;">
         <nav>
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="introduce.html">Giới thiệu</a></li>
+                <li><a href="introduce.html" class="current-site">Giới thiệu</a></li>
                 <li><a href="lobby.html">Vào trận</a></li>
                 <li><a href="create-match.html">Tạo trận</a></li>
                 <li><a href="ranking.html">Bảng xếp hạng</a></li>
@@ -20,11 +28,14 @@
     </header>
 
     <main>
-
+        <div class="left-column" style="text-align: right;">
+            <h1 style="font-size: 2em; background-color: blue; display: block;padding: 10px; float: right; text-justify: inter-word; transition: background-color 0.5s ease, color 0.5s ease;">Sân chơi Olympia độc đáo<br></h1>
+            <p style="font-size: 1.25em ;display: block; float: right; clear: right; margin-top: 0; width: 70%; text-align: right;">Với những bộ luật độc đáo và mới lạ, VNQ mùa 5 trở lại với nền tảng online cùng với nhiều bộ luật và chế độ chơi mới và độc đáo, hứa hẹn sẽ mang đến nhiều trải nghiệm mới lạ và nhiều trận thi đấu đầy hấp dẫn!</p>
+        </div>
+        <div class="right-column">
+            <img src="introduce_1.png" alt="Introduce" class="img-col" style="padding-left: 30px;">
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2022 My Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>

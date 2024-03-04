@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="lobby.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,7 +19,7 @@
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="introduce.html">Giới thiệu</a></li>
-                <li><a href="lobby.html">Vào trận</a></li>
+                <li><a href="lobby.html" class="current-site">Vào trận</a></li>
                 <li><a href="create-match.html">Tạo trận</a></li>
                 <li><a href="ranking.html">Bảng xếp hạng</a></li>
             </ul>
@@ -20,11 +27,51 @@
     </header>
 
     <main>
+        <div class="joining-code">
+        <p class="middle-label"><b>Tham gia trận đấu kín</b></p>
+            <form id="joining-private-code" action="" onsubmit="event.preventDefault(); goToPrivateGame()">
+                <label class="label" for="code">Nhập mã trận:</label>
+                <input type="text" id="jpc-code" name="code">
+                <input id="jpc-button" type="submit" value="Vào trận">
+            </form>
 
+            <script>
+                function goToPrivateGame() {
+                    var input = document.getElementById("jpc-code").value;
+                    var action = "private-" + input + "/game-lobby.html";
+                    document.getElementById("joining-private-code").action = action;
+                    if (input == "0") {
+                        alert("This room is not available at the moment. Please try again later.");
+                    } else if (input !== "1007") {
+                        alert("No such room exists!");
+                    } else {
+                    document.getElementById("joining-private-code").submit();
+                    } 
+                }
+            </script>
+        </div>
+        <p class="middle-label"><b>Tham gia trận đấu công khai</b></p>
+        <div class="public-matches">
+            <div class="public-match">
+                <p class="middle-label">Trận 1</p>
+                <button class="join-button" onclick="window.location.href='public-1/game-lobby.html'">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 2</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 3</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 4</p>
+                <button class="join-button">Vào trận</button>
+            </div>
+            <div class="public-match">
+                <p class="middle-label">Trận 5</p>
+                <button class="join-button">Vào trận</button>
+            </div>
     </main>
-
-    <footer>
-        <p>&copy; 2022 My Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>

@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="create-match.css">
+    <link rel="stylesheet" href="lobby.css">
+    <script src="create-match.js"></script>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +30,19 @@
     </header>
 
     <main>
+        <p>Tính năng đang được xây dựng</p>
+        <p class="middle-label"><b>Tạo trận đấu kín</b></p>
+        <form id="joining-private-code" action="" onsubmit="event.createMatch()">
+            <label class="label" for="code">Nhập mã trận:</label>
+            <input type="text" id="cm-code" name="code">
+            <input id="jpc-button" type="submit" value="Tạo trận">
+        </form>
 
+        <script>
+
+        </script>
+        <button onclick="createMatch()">Run createMatch()</button>
+        
     </main>
 
     <footer>
@@ -28,3 +50,4 @@
     </footer>
 </body>
 </html>
+ 
